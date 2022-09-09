@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main function takes no value
- * then all the functions are printed
+ * main - function takes no value
+ * Return: 0 if exited properly, non-zero otherwise
  */
 
 int main(void)
