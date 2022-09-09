@@ -1,4 +1,10 @@
 #include <stdio.h>
+
+/**
+ * main function takes no value
+ * then all the functions are printed
+ */
+
 int main(void)
 {
 	pritnf("Size of a char: %d byte(s)\n", sizeof(char));
