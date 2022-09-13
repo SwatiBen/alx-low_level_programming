@@ -1,7 +1,7 @@
 #include <stdio.h>
-/* * 
+/*
  *  * main - print the no.
- *   *
+ *   * this is done
  *    * Description: we are using the main here
  *     * print the program
  *      * Return: 0
@@ -14,7 +14,7 @@ int main(void)
 	{
 		putchar(c);
 	}
-	for(c = 'a'; c <= 'f'; c++)
+	for (c = 'a'; c <= 'f'; c++)
 	{
 		putchar(c);
 	}
