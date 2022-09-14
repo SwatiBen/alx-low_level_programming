@@ -3,7 +3,7 @@
 /**
  *  _isalpha - name of function
  *  Description: to chaeck a character
- *  @w; to check character
+ *  @w: to check character
  *  Return: 0
  */
 
