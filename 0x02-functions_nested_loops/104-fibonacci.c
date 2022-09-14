@@ -11,8 +11,8 @@ int main(void)
 	int w, boln, boln1;
 	long int n1, n2, fn, fn2, n11, n22;
 
-	n1 =1;
-	n2 =2;
+	n1 = 1;
+	n2 = 2;
 	boln = boln1 = 1;
 	printf("%ld, %ld", n1, n2);
 	for (w = 0; w < 96; w++)
