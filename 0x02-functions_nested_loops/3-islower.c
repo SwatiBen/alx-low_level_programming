@@ -3,6 +3,7 @@
 /**
  *  _islower - function name
  *  Description: given character is checked
+ *  @c: to check character
  *  Return: 0
  */
 
