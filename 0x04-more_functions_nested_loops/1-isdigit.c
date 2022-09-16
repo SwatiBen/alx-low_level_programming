@@ -1,14 +1,14 @@
 #include "main.h"
 /**
  *  _isdigit - digit checker
- *   @w: input
+ *   @c: input
  *   Description: this prints
  *   Return: 0
  */
 
-int _isdigit(int w)
+int _isdigit(int c)
 {
-	if ((w >= '0') && (w <= '9'))
+	if ((c >= '0') && (c <= '9'))
 	{
 		return (1);
 	}
