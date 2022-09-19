@@ -5,7 +5,7 @@
  * Description: output the length
  * Return: length of a string.
  */
-int _string(char *s)
+int _strlen(char *s)
 {
 	int i;
 
