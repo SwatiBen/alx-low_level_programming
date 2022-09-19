@@ -3,10 +3,11 @@
  * print_rev - print a string
  * @s: string print
  * Description: pritn reverse string
+ * Return void
  */
 void print_rev(char *s)
 {
-	int a, b, len;
+	int a, b;
 
 	a = 0;
 
@@ -15,12 +16,12 @@ void print_rev(char *s)
 		a++;
 	}
 
-	len = a;
+	b = a - 1;
 
-	for (b = len - 1; b >= 0; b--)
+	for (; b >= 0; b--)
 	{
 		_putchar(s[b]);
 	}
 
-	_putchar('\n);
+	_putchar('\n');
 }
