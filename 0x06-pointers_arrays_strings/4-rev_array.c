@@ -5,7 +5,7 @@
  * @a: integer
  * @n: t nmver
  */
-void reverse_array(int*a, int n)
+void reverse_array(int *a, int n)
 {
 	int b = 0, ta, c;
 	int d;
