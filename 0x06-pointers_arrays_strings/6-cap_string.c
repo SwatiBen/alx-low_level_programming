@@ -1,42 +1,33 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * upper - function
+ * cap_string - function
  * @c: char
  * Description: the return the fun
  * Return: 1 or 0
  */
 
-char upper(char c)
+char *cap_string(char *c)
 {
-	char car;
+	int count = 0, i;
+	int sep_words[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
-	if (c >= 'a' && c <= 'z')
+	if (*(c + count) >= 97 && * (c + count) <= 122)
+		*(c + count) = *(c + count) -32;
+	count++;
+	while (*(c + count) != '\0')
 	{
-		car = c + 'A' - 'a';
+		for (i = 0; i < 13; i++)
+		{
+			if (*(c + count) == sep_words[i])
+			{
+				if ((*(c + (count +1)) >= 97) && (*(c + (count + 1)) <= 122))
+					*(c + (count + 1)) = *(c (count + 1)) - 32;
+				break;
+			}
+		}
+		count ++;
 	}
-	else
-		car = c;
-	return (car);
+	return (c);
 }
 
-/**
- * cap_string - a functiojn
- * @str: character
- * Description: tis the pin
- * Return: string
- */
-
-char *cap_string(char *str)
-{
-	int i;
-
-
-	i = 0;
-	while (str[i])
-	{
-		str[i] = upper(str[i];
-		i++;
-	}
-	return (str);
-}
