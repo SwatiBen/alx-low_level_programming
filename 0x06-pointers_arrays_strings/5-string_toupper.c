@@ -1,19 +1,19 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * upper - function fo char c
+ * string_toupper - function fo char c
  * @c: the char
  * Description: to fun to char
  * Return: 1 or 0
  */
-char upper(char c)
+char *string_toupper(char *c)
 {
-	char car;
-	
-	if (c >= 'a' && c <= 'z')
+	int count = 0;
+
+	while (*(c + count) != '\0')
 	{
-		car = c + 'A' - 'a';
+		if ((*(c + count) >= 97) && (*(c + count) <= 122))
+			*(c + count) = *(c + count) - 32;
+		count++;
 	}
-	else
-		car = c;
-	return (car);
+	return (c);
 }
