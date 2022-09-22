@@ -1,33 +1,44 @@
 #include "main.h"
+#include <stdio.h>
+#include <string.h>
 
 /**
  * cap_string - function
- * @c: char
+ * @str: capatalise the string
  * Description: the return the fun
- * Return: 1 or 0
+ * Return: capital string
  */
 
-char *cap_string(char *c)
+char *cap_string(char *str)
 {
-	int count = 0, i;
-	int sep_words[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+	int converted = 0, length, i;
+	char c;
 
-	if (*(c + count) >= 97 && * (c + count) <= 122)
-		*(c + count) = *(c + count) -32;
-	count++;
-	while (*(c + count) != '\0')
+	length = strlen(str);
+
+	for (i = 0; i < length; i++)
 	{
-		for (i = 0; i < 13; i++)
+		if (*(str + i) == '\n' || *(str + i) == '\t' || *(str + i) == ' ' || *(str + i) == ',' || *(str + i) == ';' || *(str + i) == '.' || *(str + i) == '!' || *(str + i) == '?' || *(str + i) == '"' || *(str + i) == '(' || *(str + i) == ')' || *(str + i) == '{' || *(str +i) == '}')
 		{
-			if (*(c + count) == sep_words[i])
-			{
-				if ((*(c + (count +1)) >= 97) && (*(c + (count + 1)) <= 122))
-					*(c + (count + 1)) = *(c (count + 1)) - 32;
-				break;
-			}
+			converted = 0;
 		}
-		count ++;
-	}
-	return (c);
-}
+		else
+		{
+			if (converted)
+			{
+				continue;
+			}
 
+			c = *(str + i);
+
+		if (*(str + i) >= 'a' && *(str + i) <= 'z')
+		{
+			int cap = 'A';
+			int diff = c - 'a';
+			*(str + i) = cap + diff;
+		}
+			converted = 1;
+		}
+	}
+	return (str);
+}
