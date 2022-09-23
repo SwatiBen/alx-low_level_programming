@@ -1,14 +1,14 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * rot13 - encode a string
  * @s: string to input
  * Return: the pointer
  */
-char *rot1(char *s)
+char *rot13(char *s)
 {
 	int count = 0, 1;
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	while (*(s + count) != '\0')
 	{
