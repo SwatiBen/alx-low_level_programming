@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * print_diagsums - sum to print
  * @a: matrix
@@ -10,11 +11,12 @@ void print_diagsums(int *a, int size)
 {
 	int b, c = 0, d = 0;
 
-	for (b = 0; b < size; b++)
+	for (b = 0; b < (size * size); b++)
 	{
-		c += *(a + (size * b + b));
-		d += *(a + (size * b + size - 1 - b));
+		if (b % (size + 1) == 0)
+			c += *(a + b);
+		if (b % (size - 1) == 0 && b != 0 && b < size * size - 1)
+			d += *(a + b);
 	}
-	print("%d, ", c);
-	print("%d\n", d);
+	printf("%d, %d\n", c , d);
 }
