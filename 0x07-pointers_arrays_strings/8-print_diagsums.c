@@ -3,6 +3,7 @@
 #include <stdlib.h>
 /**
  * print_diagsums - sum to print
+ * Description: to calculate te sum
  * @a: matrix
  * @size: the length of a matrix
  * Return: 1 or 0
