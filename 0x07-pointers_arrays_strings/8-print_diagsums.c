@@ -1,21 +1,20 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_diagsums - function to print
+ * print_diagsums - sum to print
  * @a: matrix
- * @size: the length ofo matrix
+ * @size: the length of a matrix
  * Return: 1 or 0
  */
 void print_diagsums(int*a, int size)
 {
-	int i = 0, *ptr, j = 0;
+	int b = 0, c = 0, d = 0;
 
-	for (i = 0; i < size; i++)
+	for (b = 0; b < size; b++)
 	{
-		ptr = a;
-		for (j = 0; j < size; j++)
-			printf("%d ",ptr[j]);
-		ptr++;
-		print("\n");
+		c += *(a + (size * b + b));
+		d += *(a + (size * b + size - 1 - b));
 	}
+	print("%d, ", c);
+	print("%d\n", d);
 }
