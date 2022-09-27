@@ -6,9 +6,9 @@
  * @size: the length of a matrix
  * Return: 1 or 0
  */
-void print_diagsums(int*a, int size)
+void print_diagsums(int *a, int size)
 {
-	int b = 0, c = 0, d = 0;
+	int b, c = 0, d = 0;
 
 	for (b = 0; b < size; b++)
 	{
