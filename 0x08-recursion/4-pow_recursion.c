@@ -2,7 +2,7 @@
 /**
  * _pow_recursion - function
  * @x: the num
- * @y; number
+ * @y: number
  * Return: Always 0
  */
 int _pow_recursion(int x, int y)
