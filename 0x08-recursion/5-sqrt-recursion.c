@@ -6,4 +6,4 @@
  * @i: num
  * Return: 0
  */
-int _sqrt
+int _s
