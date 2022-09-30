@@ -16,7 +16,7 @@ int _strlen_recursion(char *s)
  * @s: chaine
  * @taille: ni
  * @i: nikber
- * Return: 0;
+ * Return: 0
  */
 int palidrone(char *s, int taille, int i)
 {
@@ -31,7 +31,7 @@ int palidrone(char *s, int taille, int i)
 		return (1);
 }
 /**
- * is_palindrone - fun
+ * is_palindrome - fun
  * @s: chain
  * Return: 0
  */
@@ -39,5 +39,5 @@ int is_palindrome(char *s)
 {
 	if (s[0] == '\0')
 		return (1);
-	return (palidrone(s, _strlen_recursion(s) - 1, 0));
+	return (palidrome(s, _strlen_recursion(s) - 1, 0));
 }
