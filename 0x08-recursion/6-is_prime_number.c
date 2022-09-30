@@ -1,4 +1,5 @@
 #include "main.h"
+
 int tmp_prime(int n, int i);
 /**
  * divisors - number prime
@@ -6,6 +7,7 @@ int tmp_prime(int n, int i);
  * @m: int
  * Return: 0
  */
+
 int divisors(int n, int m)
 {
 	if (m % n == 0)
@@ -15,11 +17,13 @@ int divisors(int n, int m)
 	else
 		return (1);
 }
+
 /**
  * is_prime_number - prime
  * @n: int
  * Return: 0
  */
+
 int is_prime_number(int n)
 {
 	if ((!(n % 2) && n != 2) || n < 2)
