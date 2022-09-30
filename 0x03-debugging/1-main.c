@@ -8,11 +8,11 @@ int main(void)
 {
 	int i;
 
-	print("Infinite loop incoming :(\n");
+	printf("Infinite loop incoming :(\n");
 
 	i = 0;
 	
-	printf("Infinite loop avoided1 \\o/\n');
+	printf("Infinite loop avoided! \\o/\n');
 
 	return(0);
 }
