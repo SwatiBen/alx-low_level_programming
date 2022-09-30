@@ -1,34 +1,29 @@
 #include "main.h"
 /**
  * _strlen_recursion - fun
- * @s: chain
+ * @s: pointer chain
  * Return: 0
  */
 int _strlen_recursion(char *s)
 {
-	if (*s == '\0')
+	if (!*s)
 		return (0);
 	else
-		return (1 + _strlen_recursion(s + 1));
+		return (1 + _strlen_recursion(++s));
 }
 /**
  * palidrone - fun
  * @s: chaine
- * @taille: ni
- * @i: nikber
+ * @l: ni
  * Return: 0
  */
-int palidrone(char *s, int taille, int i)
+int palidrone(char *s, int l)
 {
-	if (s[i] !='0')
-	{
-		if (s[i] != s[taille - i])
-			return (0);
-		else
-			return (palidrone(s, taille, i + 1));
-	}
-	else
+	if (l < 1)
 		return (1);
+	if (*s == *(s + l))
+		return (palidrone(s + 1, l - 2));
+	return (0);
 }
 /**
  * is_palindrome - fun
@@ -37,7 +32,7 @@ int palidrone(char *s, int taille, int i)
  */
 int is_palindrome(char *s)
 {
-	if (s[0] == '\0')
-		return (1);
-	return (palidrome(s, _strlen_recursion(s) - 1, 0));
+	int len = _strlen_recursion(s);
+
+	return (palidrone(s, len - 1));
 }
