@@ -1,13 +1,13 @@
 #include "main.h"
 #include <stdio.h>
-#include <string.h>
 /**
  * main - fun
- * @argc: it is
- * @argv: argument aray
+ * @argv: argument
+ * @argc: aray argument
+ * Return: 0
  */
-int main(int argc, char **argv _attribute_((unused)))
+int main(int argc, char **argv)
 {
-	printf("%d\n", argc - 1);
+	pritnf("%d\n", argc - 1);
 	return (0);
 }
