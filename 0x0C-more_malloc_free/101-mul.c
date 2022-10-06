@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "main.h"
+#include <stdlib.h>
 /**
  * main - fun
  * @argc: argument
@@ -10,7 +12,7 @@ int main(int argc, char *argv[])
 	unsigned long m;
 	int a, b;
 	
-	if (argc !=3)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		exit(98);
